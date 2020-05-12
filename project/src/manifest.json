@@ -1,0 +1,34 @@
+{
+  "manifest_version": 2,
+  "name": "DBLab Chrome extension base",
+  "version": "1.0",
+  "description": "HanYang University DBLab chrome extension base template",
+  "author": "Geunseong Jung",
+  "homepage_url": "http://db.hayang.ac.kr",
+  "icons": {},
+  "browser_action": {
+    "default_popup": "browser-action/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script/index.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background/index.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "tabs"
+  ]
+}

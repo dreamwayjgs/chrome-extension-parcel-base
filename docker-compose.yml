@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+    node:
+        container_name: basic-chrome-extension-node
+        image: node
+        ports: 
+            - "3345:3345"
+        volumes:
+            - .:/workspace:cached        
+        stdin_open: true
+        tty: true
