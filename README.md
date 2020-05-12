@@ -1,5 +1,4 @@
 # Chrome extension with Parcel bundler
-=============
 
 Start with Docker container: [**VSCode 공식 문서**](https://code.visualstudio.com/docs/remote/containers)
 
