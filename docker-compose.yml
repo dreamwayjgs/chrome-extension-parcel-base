@@ -2,10 +2,8 @@ version: '3'
 
 services:
     node:
-        container_name: basic-chrome-extension-node
-        image: node
-        ports: 
-            - "3345:3345"
+        container_name: chrome-extension-parcel-base-node
+        image: node        
         volumes:
             - .:/workspace:cached        
         stdin_open: true
